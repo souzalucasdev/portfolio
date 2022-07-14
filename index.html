@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+    rel="stylesheet"/>
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <h1>
+            LSDev
+        </h1>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <section class="intro">
+        <video class="video"src="./videos/video-1.mp4" autoPlay loop muted></video>
+        <!-- <h1 id="hello" data-text="Hello!"></h1> -->
+        <h1> LUCAS' PORTIFOLIO</h1>
+        <p>a Lucas Souza production</p>
+            
+        <!-- <div class="arrows">
+            <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/109/109618.png" alt="">
+            <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/109/109617.png" alt="">
+        </div> -->
+    </section>
+
+
+
+
+
+<div class="wrapper">
+
+    <h2>Use your left and right arrow to walk through my timeline.</h2>
+    <section class="timeline">
+        <div id="first-date" style="display:flex;">
+            <div id="myId"><p>The Beggining</p></div>
+        </div>
+        <div id="second-date" style="display:none;">
+            
+            <div id="myId"><p>First project</p></div>
+        </div>
+        <div id="third-date" style="display:none;">
+            
+            <div id="myId"><p>Something</p></div>
+        </div>
+        <div id="fourth-date" style="display:none;">
+            
+            <div id="myId"><p>Bootcamp Final Project</p></div>
+        </div>
+        <div id="fifth-date" style="display:none;">
+            
+            <div id="myId"><p>07/2022</p></div>
+        </div>
+    </section>
+
+
+
+
+    <div class="timeline-items">       
+            
+         <div id ="first-content">
+            <div class="first-text">
+            <h2>The Beggining</h2>
+            <p class="first-description">On the 1st of March of 2022 I attended to NumericALL's bootcamp in partnership with ADEM (State's agency for development of employment). The scope of this trainning included basics such as HTML5 and CSS3, front-end technologies like <span style="font-weight: bold; color:yellow;">JavaScript</span> and <span style="font-weight: bold; color: rgb(119, 208, 238);">React</span> and backend trainings on PHP and Laravel.<br>
+            </p>
+            
+             <p class="btn-indication">Click the button and see what I enjoyed the most from this training:</p>
+            </div>
+            <div id="frontend-logos">
+                <img class="js-logo" src="https://logospng.org/download/javascript/logo-javascript-icon-1024.png" alt="">
+                <img class="react-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+            </div>
+            <div id="beggining-btn"class="beggining-btn" onclick="toggleLogos()">Discover</div>
+            
+        </div>
+
+
+
+
+
+
+
+         <div id ="second-content">
+            <h2>First Project</h2>
+            <p>There will be some description here.</p>
+        </div>
+         <div id ="third-content">
+            <h2>Other Project</h2>
+            <p>There will be some description here.</p>
+        </div>
+
+
+         <div id ="fourth-content">
+            <h2>Match Home</h2>
+            <p>This was my first team real experience where we had to build an application from scratch within 8 days. In this project I took the frontend lead. Everything was built with HTML, CSS and Vanilla JavaScript. No frameworks or libraries were used because of a team's colletive decision. This application is not online but you can see more about it with the project description and images by clicking the <span style="color: rgb(14, 170, 14)">See More</span> button below.</p>
+            <img class="match-home-icon" src="./imgs/favicon.png" alt="">
+            <div id="match-home-details" class="match-home-details">
+                <div id="match-home-images"class="match-home-images">
+                    <img id="home-image"onclick=largeImageHome() src="./imgs/matchhome-homepage2.PNG" alt="">
+                    <img id ="aboutus-image" onclick=largeImageAboutus() src="./imgs/matchhome-aboutus.PNG" alt="">
+                </div>
+                <p class="match-home-description">During this project I had the experience of working in a team and lead a frontend team of 3 developers (me included).
+                    It was a big challenge because of the lack of time to build a project from scratch being a junior with very low experience.
+                    Still, the results were satisfying and the application served the main purpose and please the "customers" which was a juri of 8 people.
+                </p>
+            </div>
+            <div id="see-more-btn" class="see-more-btn" onclick="displayProjectInfo()">See more</div>
+        </div>
+
+
+         <div id ="fifth-content">
+            <h2>Portifolio Project</h2>
+            <p>There will be some description here.</p>
+            <div id="beggining-btn"class="beggining-btn" onclick="toggleLogos()">See more</div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+    <section class="future-projects">
+        <div class="card">
+            <h2>Project 1</h2>
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </section>
+    
+ <script src="script.js"></script>
+</body>
+</html>
